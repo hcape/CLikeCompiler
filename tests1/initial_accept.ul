@@ -1,0 +1,555 @@
+
+//
+// 1.0 FUNCTION DECLARATION
+// 
+
+// 1.1 Testing the identifier in the function name
+
+// 1.1.1 Upper and lower case tests
+
+    void main() {}
+    int A (){}
+    int a () {}
+    int ab () {}
+    int aB () {}
+    int aBa () {}
+    int AB () {}
+    int Ab () {}
+
+// 1.1.2 underscore and number tests
+
+    int _ () {}
+    int _213 () {}
+    int AS__432432fdssf () {}
+
+// 1.2 Different spacing
+
+    int afndjakb(){}
+    int abcds   (  )    {    }
+
+// 1.3 Function compund types
+
+    float area(){}
+    char areqrq(){}
+    string afdadsa(){}
+    boolean awaerrer(){}
+    void aaaasdfsda(){}
+
+//1.3.1 Array Types
+
+    void[123] a1(){}
+    int[123] a2(){}
+    float[3] a3(){}
+    char[999] a4(){}
+    string[32143] a5(){}
+    boolean[43423] a6(){}
+
+//1.4 Formal Parameters
+
+    int a7 (int a) {}
+    int a8 (int a, float b) {}
+    int a9 (int a, char[10]c) {}
+
+//
+// 2.0 FUNCTION BODY
+//
+
+// 2.1 Variable declaration 
+
+    int a10 (int a) 
+    {
+        int aa;
+        boolean by;
+        float c;
+        string b;
+    }
+
+// 2.2 Expressions
+
+// 2.2.1 Atomic Expressions (statement -> expressions)
+
+    int a123 (int a) 
+    {
+
+
+        int test;
+        int ___wowl;
+        ;;;;;
+        ;;;;;
+
+        //ID
+        
+        // LITERALS 
+        //String
+        
+        "hello";
+        "HEllo";
+        "";
+        " ";
+        "_feqfea";
+        "89089dajfieoj__    fda f njjkdfd";
+
+        //Integer
+        
+        4893280;
+        000;
+        1;
+    
+        //Float
+
+        0.3;
+        3.3432432;
+        000054252.00000;
+
+        //Char
+
+        'a';
+        'A';
+        '_';
+        ' ';
+        '0';
+
+        //t/f
+
+        true;
+        false;
+
+        // (expr)
+        
+        (test);
+        ("hello");
+        ('a');
+        (123214);
+        (3.0);
+        (true);
+
+    }
+
+// 2.2.2 Recursive Expressions
+
+int a432 (int a) 
+    {
+        //id [expr]
+
+        int ab;
+        float b;
+        int[10] ident;
+        int test;
+        int tester;
+        int wowie;
+
+        ident[test];
+        ident[123];
+        //ident[234.343];
+        //ident[true];
+        //ident[false];
+        ident[(test)];
+        //ident[(___wow)];
+        //ident[("hello")];
+        //ident[('a')];
+        ident[(123214)];
+        //ident[(3.0)];
+        //ident[(true)];
+        ident[(((((test)))))];
+        //ident[ident('a', "b")];
+        //ident[((ident('a', "b")))];
+        //ident[((ident('a', "b", ident['a'])))];
+        
+        //id (exprlist)
+
+       // ident();
+       // ident(test);
+       // ident("hello");
+       // ident('a');
+       // ident(123);
+       // ident(234.343);
+       // ident('a', "b", c, d, 2, 3);
+       // ident('a', "b", ident[true], ident[(true)]);
+       // ident('a', "b", ident('a', "b"));
+       // ident('a', ident('a', "b"), ident[ident('a', "b")], ident[((ident('a', "b")))]);
+       // ident(ident[((ident('a', "b", ident['a'])))]);
+
+        //expr op expr
+
+        //identifiers
+
+
+        test == tester;
+        //test == tester == wowie;
+        //_213 == hello < YES + neat - cool * test;
+        //(brackets * number) + plus (brackets == cool);
+
+        //literals
+        12 == 14;
+        //34.432 - (hello + true) * false;
+       // (('w' + 'w') < wowie == 4);
+        false == true;
+        'w' + 'x';
+        5 < 10;
+
+        //id[expr]
+
+        //test[34.2 + 12 - "wow"] == hello * 'n';
+       // ident[((ident('a', "b", ident['a']))) < wownicelist - 123 * false];
+        
+         //id(exprlist)
+
+        //test(expr1 + expr11 * "haha", (1 * 10.0) == 'a', (neat) );
+
+
+    }
+
+//2.3 Statements
+
+    //ifs
+    int a43243 (int a) 
+    {
+
+        int i;
+        boolean b;
+        boolean expr;
+        //if
+        if ( expr ) { ; }
+       // if (123+123) { ; }
+       // if (ident[((ident('a', "b", ident['a']))) + wownicelist - 123 * false]) { ;; }
+
+        //if with block statement
+
+        if(i == 3) 
+        {
+            i = i+1;
+            i = 23;
+            b = false;
+           // hello[test] == wowie;
+        }
+
+        //if else
+
+        if ( expr ) { ; } else { ; }
+        //if (ident[((ident('a', "b", ident['a']))) + wownicelist - 123 * false]) { ; } else { ; }
+        if(i < 3) 
+        {
+          //  i = 'i'+1;
+          //  i = 23.231;
+            b = true;
+           // hello(test, test2) == wowie;
+        }
+        else
+        {
+           // i = 'i'< 1;
+           // i = 0  - 23.231;
+            b = true;
+           // hello(test, test2) == wowie;   
+        }
+    }
+
+    //while
+    int b (float c)
+    {
+        boolean expr;
+        while (expr) {;}
+       // while(ident[((ident('a', "b", ident['a']))) + wownicelist - 123 * false]) { ; }
+        while(123 < 1234)
+        {
+            //statement;
+            //statement + statements < 123;
+            //statement[wow] == statement(list, of ,"statments");
+        }
+
+    }
+
+    //prints
+
+    int ident(string s)
+    {
+
+    }
+
+    void a234(int abcd)
+    {
+        int haha;
+        print haha;
+        print 'a';
+        print "fafedsa";
+        print 123.321;
+        print ident("hello");
+        //print ident('a');
+       // print ident(123);
+       // print ident('a', "b", c, d, 2, 3);
+       // print ident('a', "b", ident[true], ident[(true)]);
+       // print ident('a', "b", ident('a', "b"));
+       // print 123 + 414 - ('a' < "abc") == ident[hi];
+       // print ident[test];
+
+        println haha;
+        println 'a';
+        println "fafedsa";
+        println 123.321;
+        println ident("hello");
+       // println ident('a');
+       // println ident(123);
+       // println ident('a', "b", c, d, 2, 3);
+       // println ident('a', "b", ident[true], ident[(true)]);
+       // println ident('a', "b", ident('a', "b"));
+       // println 123 + 414 - ('a' < "abc") == ident[hi];
+       // println ident[test];
+
+
+        //return
+
+        return;
+
+        //return haha;
+        //return 'a';
+        //return "fafedsa";
+        //return 123.321;
+        //return ident("hello");
+        //return ident('a');
+        //return ident(123);
+        //return ident('a', "b", c, d, 2, 3);
+        //return ident('a', "b", ident[true], ident[(true)]);
+        //return ident('a', "b", ident('a', "b"));
+        //return 123 + 414 - ('a' < "abc") == ident[hi];
+        //return ident[test]; 
+    }
+
+// id = expr;
+// id [expr] = expr;
+
+float f()
+{
+
+}
+
+float ___()
+{
+
+    char c;
+    int i;
+    string s;
+    float f;
+    boolean b;
+
+    int[10] dasda;
+    int expr;
+//    id = expr;
+    
+    //ids
+    //dasda = expr;
+    //a1232 = expr;
+    //_ = expr;
+    //FSAD = expr;
+    
+    //exprs
+    c = 'a';
+    s = "a";
+    i = 123;
+    f = 123.321;
+    b = true;
+    b = false;
+
+    f = f();
+    //a123SAD__ = ident('a');
+    //a123SAD__ = ident(123);
+    //a123SAD__ = ident('a', "b", c, d, 2, 3);
+    //a123SAD__ = ident('a', "b", ident[true], ident[(true)]);
+    //a123SAD__ = ident('a', "b", ident('a', "b"));
+    //a123SAD__ = 123 + 414 - ('a' < "abc") == ident[hi];
+    //a123SAD__ = ident[test];
+    //a123SAD__ = ident[test + 123 < "abv"];
+    
+    
+    //id[expr] = expr;
+
+    //ids
+    dasda[expr] = expr;
+    //a1232[expr] = expr;
+    //_[expr] = expr;
+    //FSAD[expr] = expr;
+    
+    //exprs
+    //a123SAD__[expr] = 'a';
+    //a123SAD__[expr] = "a";
+    //a123SAD__[expr] = 123;
+    //a123SAD__[expr] = 123.321;
+    //a123SAD__[expr] = true;
+    //a123SAD__[expr] = false;
+
+    //a123SAD__[expr] = ident("hello");
+    //a123SAD__[expr] = ident('a');
+    //a123SAD__[expr] = ident(123);
+    //a123SAD__[expr] = ident('a', "b", c, d, 2, 3);
+    //a123SAD__[expr] = ident('a', "b", ident[true], ident[(true)]);
+    //a123SAD__[expr] = ident('a', "b", ident('a', "b"));
+    //a123SAD__[expr] = 123 + 414 - ('a' < "abc") == ident[hi];
+    //a123SAD__[expr] = ident[test];
+    //a123SAD__[expr] = ident[test + 123 < "abv"];
+
+
+    //[exprs]
+    //a123SAD__[1234] = 'a';
+    //a123SAD__[1.432] = "a";
+    //a123SAD__['a'] = 123;
+    //a123SAD__["hello"] = 123.321;
+    //a123SAD__[false] = true;
+    //a123SAD__[true] = false;
+
+    //a123SAD__[id("what", 'a')] = ident("hello");
+    //a123SAD__[id[wow]] = ident('a');
+    //a123SAD__[ident('a', "b", c, d, 2, 3)] = ident(123);
+    //a123SAD__[1234 + 5342.532 - 'a'] = ident('a', "b", c, d, 2, 3);
+    //a123SAD__[(expr)] = ident('a', "b", ident[true], ident[(true)]);
+    //a123SAD__[(expr * 1232)] = ident('a', "b", ident('a', "b"));
+    //a123SAD__[(123<123)*123-(123+123)] = 123 + 414 - ('a' < "abc") == ident[hi];
+    //a123SAD__[id[test]] = ident[test];
+}
+
+//nested
+
+int a4324343 ()
+{
+    boolean a;
+    if(a)
+    {
+        if(a){}
+    }
+}
+
+
+// sample.ul
+int factorial (int n) {
+	if (n == 1) {
+		return 1;
+	}
+	else {
+		return n*factorial(n-1);
+	}
+}
+
+// And some more comments
+// Here they are
+
+void wowow () {
+	print "The factorial of 8 is ";  
+	println factorial(8); // Another comment
+}
+
+
+int foo (int x, float y, string z, char c, boolean a) {
+	string zz;
+	float  yy;
+	char   cc;
+	boolean aa;
+	int	xx;
+
+	while (x < 10) {
+		;
+	}
+
+	if (zz == "abc") {
+		;
+	}
+
+	if (yy < 2.3 ) {
+		;
+	}
+	else {
+		;
+	}
+
+	print xx;
+	println x;
+
+	return xx;
+
+	//return;
+}
+int[5] jeez () {
+	int[5] a;
+	int    b;
+
+	b = 73;
+	
+	a[0] = 1;
+	a[1] = 2;
+
+	a[3] = a[1] + a[0];
+
+	return a;
+}
+
+boolean bar ( int[5] f ) {
+
+	return f[3] < f[1];
+}
+
+void nice () {
+	int x; 
+	int y;
+
+	x = 12;
+	y = 22;
+
+	println x - y + x * y;
+}
+void cool () {
+	float x;
+	boolean a;
+	int z;
+	string q;
+	char c;
+
+	x = 37.2;
+	println x;
+	x = 0.003;
+	println x;
+
+	a = false;
+	println a;
+	a = true;
+	println a;
+
+	z = 34;
+	println z;
+	z = 0;
+	println z;
+
+	q = "abcdef";
+	println q;
+	q = "this is the end";
+	println q;
+
+	c = 'a';
+	println c;
+	c = 'b';
+	println c;
+}
+
+int sampleOne (int x, int y)
+{
+ if (x<y)
+ {
+ print "Hello";
+ }
+ else
+ {
+ print "Goodbye";
+ }
+ return x*y;
+}
+void sampleTwo (int x)
+{
+ float[10] b;
+ while (x<10)
+ {
+ x=x-1;
+ }
+ x=8;
+}
+void meme ()
+{
+ string[10] a;
+ int w;
+ println sampleOne(10,9);
+ sampleTwo(w);
+}
